@@ -14,7 +14,8 @@ install:
   - cmd echo {{NugetOrKey}}
 deploy:
   provider: NuGet
-  api_key: {{NugetOrKey}}
+  api_key:
+    secure: {{NugetOrKey}}
   skip_symbols: false
   symbol_server:           # remove to push symbols to SymbolSource.org
   artifact: /.*\.nupkg/
