@@ -16,12 +16,6 @@ init:
       Update-AppveyorBuild -Version "$($env:APPVEYOR_REPO_TAG_NAME).$($env:APPVEYOR_BUILD_NUMBER)"
     }
 
-    else
-
-    {
-      Update-AppveyorBuild -Version "0.0.0.$($env:APPVEYOR_BUILD_NUMBER)-$($env:APPVEYOR_REPO_COMMIT.substring(0,7))"
-    }
-
 # The nuget package always get published to the project feed. 
 # This allows it to be downloaded and tested.
 nuget:
