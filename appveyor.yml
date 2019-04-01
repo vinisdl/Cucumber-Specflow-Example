@@ -26,7 +26,7 @@ init:
 # This allows it to be downloaded and tested.
 nuget:
   project_feed: true
-test: off
+
 before_build:
 # Before building, restore any nuget libraries required.
 - cmd: nuget restore Example.SpecFlow.sln
@@ -34,6 +34,17 @@ before_build:
 build:
   publish_nuget: true
   verbosity: normal
+
+test: off
+
+assembly_info:
+# Patch true ensures that the assemblies version number 
+# gets set to the build version number
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
 # The following is the details allowing for appveyor to push the 
 # new version of the package to nuget.org.
 deploy:
