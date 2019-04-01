@@ -9,9 +9,9 @@
     }
   },
   "launch": {
-    "name": "SpecFlow Demo Launch",
-    "description": "this is description",
+    "name": "SpecFlow Launch",
+    "description": "",
     "debugMode": true,
-    "tags": [ "t1", "t2" ]
+    "tags": [ "bdd", "specflow", "cucumber" ]
   }
 }
