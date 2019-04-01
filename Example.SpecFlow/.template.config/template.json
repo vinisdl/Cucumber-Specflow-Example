@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Marco Vinicius Soares Dalalba",
+    "classifications": [ "Test", "Bdd" ],
+    "identity": "Example.SpecFlow",
+    "name": "SpecFlow Test Apllication",
+    "sourceName": "Example.SpecFlow",
+    "shortName": "teste"
+    
+}
