@@ -24,8 +24,7 @@ namespace Example.SpecFlow.Hooks
          private static ChromeOptions GetChromeOptions()
         {
             var option = new ChromeOptions();
-            // if (false)
-            //     option.AddArguments("headless");
+            option.AddArguments("headless");
 
             option.AddArguments("start-maximized"); // open Browser in maximized mode
             option.AddArguments("disable-infobars"); // disabling infobars
