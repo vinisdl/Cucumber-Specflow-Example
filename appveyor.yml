@@ -1,6 +1,6 @@
 # By default the version is set to the same thing as non-deployed builds.
 # However, this is always overwritten using Update-AppveyorBuild below.
-version: 0.0.0.{build}
+version: 1.0.0.{build}
 image: Visual Studio 2017
 # Package should use the Release, not Debug configuration.
 configuration: Release
@@ -36,6 +36,14 @@ build:
   verbosity: normal
 
 test: off
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
 
 assembly_info:
 # Patch true ensures that the assemblies version number 
