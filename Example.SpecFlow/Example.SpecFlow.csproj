@@ -6,6 +6,7 @@
    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
    <AssemblyVersion>1.0.0.11</AssemblyVersion>
    <FileVersion>1.0.0.11</FileVersion>
+   <Version>1.0.11</Version>
   </PropertyGroup>
 
   <ItemGroup>
