@@ -7,10 +7,10 @@ branches:
 
 environment:
   NugetKey: $env:NugetKey
-  
+
 install:
   # by default, all script lines are interpreted as batch
-  - echo $env:NugetKey
+  - echo {NugetKey}
 deploy:
   provider: NuGet
   api_key:
