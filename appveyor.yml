@@ -21,18 +21,12 @@ init:
     {
       Update-AppveyorBuild -Version "0.0.0.$($env:APPVEYOR_BUILD_NUMBER)-$($env:APPVEYOR_REPO_COMMIT.substring(0,7))"
     }
-assembly_info:
-# Patch true ensures that the assemblies version number 
-# gets set to the build version number
-  patch: true
-  file: '**\AssemblyInfo.*'
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
+
 # The nuget package always get published to the project feed. 
 # This allows it to be downloaded and tested.
 nuget:
   project_feed: true
+test: off
 before_build:
 # Before building, restore any nuget libraries required.
 - cmd: nuget restore Example.SpecFlow.sln
