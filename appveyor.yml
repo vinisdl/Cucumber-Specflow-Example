@@ -1,6 +1,16 @@
+# version format
+version: 1.0.{build}
+branches:
+  # whitelist
+  only:
+    - master
 
 environment:
   NugetKey: $env:NugetKey
+  
+install:
+  # by default, all script lines are interpreted as batch
+  - echo $env:NugetKey
 deploy:
   provider: NuGet
   api_key:
