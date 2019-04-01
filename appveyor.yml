@@ -6,15 +6,15 @@ branches:
     - master
 
 environment:
-  NugetKey:
+  NugetOrKey:
     secure: kBmfOcUw5/X3hOmg+7i9fB+5GPSkQuK6ElNnRtdLnhD79Ot6IBOqpmX6qbP1WY+f
 
 install:
   # by default, all script lines are interpreted as batch
-  - cmd echo %NugetKey%
+  - cmd echo %NugetOrKey%
 deploy:
   provider: NuGet
-  api_key: %NugetKey%
+  api_key: %NugetOrKey%
   skip_symbols: false
   symbol_server:           # remove to push symbols to SymbolSource.org
   artifact: /.*\.nupkg/
