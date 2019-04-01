@@ -22,7 +22,7 @@ build:
   publish_nuget: true
 
 before_build:
-  - nuget restore
+  - dotnet restore
  
 nuget:
   account_feed: true
