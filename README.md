@@ -12,5 +12,5 @@ dotnet new -i Example.SpecFlow
 
 # New Project
 ```bash
-dotnet new Example.SpecFlow -n myProjectName
+dotnet new specflow -n myProjectName
 ```
