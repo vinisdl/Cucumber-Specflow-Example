@@ -7,10 +7,10 @@ Projeto como exemplo da nova versão do specflow (3.x)
 
 # Install 
 ```bash
-dotnet new -i Example.SpecFLow
+dotnet new -i Example.SpecFlow
 ```
 
 # New Project
 ```bash
-dotnet new Example.SpecFLow -n myProjectName
+dotnet new Example.SpecFlow -n myProjectName
 ```

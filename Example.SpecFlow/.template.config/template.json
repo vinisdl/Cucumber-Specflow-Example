@@ -5,6 +5,12 @@
     "identity": "Example.SpecFlow",
     "name": "SpecFlow Test Apllication",
     "sourceName": "Example.SpecFlow",
-    "shortName": "specflow"
+    "shortName": "specflow",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "preferNameDirectory": true,
+    "primaryOutputs": [ { "path": "Example.SpecFlow.csproj" } ]
     
 }
