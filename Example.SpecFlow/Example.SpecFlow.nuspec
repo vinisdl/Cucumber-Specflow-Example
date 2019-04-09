@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Example.SpecFlow</id>
+    <version>1.2.1.46</version>
+    <description>
+      Creates the DDD project.
+      # Install 
+      ```bash
+      dotnet new -i Example.SpecFlow
+      ```
+
+      # New Project
+      ```bash
+      dotnet new specflow -n myProjectName
+      ```
+
+    </description>
+    <language>pt-BR</language>
+
+    <authors>vinisdl</authors>
+    <projectUrl>https://github.com/vinisdl/Cucumber-Specflow-Example</projectUrl>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+ <files>
+   <file src="**/Hooks/*;**/Scenarios/*;**/StepDefenitions/*;**/.template.config/*;Example.SpecFlow.csproj" />  
+ </files>
+</package>
